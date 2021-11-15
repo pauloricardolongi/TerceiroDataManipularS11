@@ -17,9 +17,11 @@ public class Programa {
 		
 		Calendar cal = Calendar.getInstance();//instanciar calendário 
 		cal.setTime(d);
-		cal.add(Calendar.HOUR_OF_DAY, 4); //adicionar 4 horas do dia
-		d = cal.getTime(); //atualizar hora 
-		System.out.println(sdf.format(d));
+		int minutos = cal.get(Calendar.MINUTE);
+		int mes = 1 + cal.get(Calendar.MONTH);
+		System.out.println("Minutos: " + minutos);
+		System.out.println("Mês: " + mes);
+		
 	}
 
 }
